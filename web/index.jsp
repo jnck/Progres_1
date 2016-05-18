@@ -15,6 +15,12 @@
         <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
+        <%
+        String myname =  (String)session.getAttribute("username");        
+        if(myname == null){
+                response.sendRedirect("login.jsp");
+        }         
+        %>
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
@@ -26,8 +32,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> DR A <i class="caret"></i>
-
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> <%=session.getAttribute("username")%> <i class="caret"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -35,7 +40,7 @@
                                     </li>
                                     <li class="divider"></li>
                                     <li>
-                                        <a tabindex="-1" href="login.html">Logout</a>
+                                        <a tabindex="-1" href="LogoutServlet">Logout</a>
                                     </li>
                                 </ul>
                             </li>
@@ -129,7 +134,7 @@
                 <div class="span3" id="sidebar">
                     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
                         <li class="active">
-                            <a href="beranda.jsp"><i class="icon-chevron-right"></i>Beranda</a>
+                            <a href="index.jsp"><i class="icon-chevron-right"></i>Beranda</a>
                         </li>
                         <li>
                             <a href="pasien.jsp"><i class="icon-chevron-right"></i>Registrasi</a>

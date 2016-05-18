@@ -54,6 +54,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <script src=\"vendors/modernizr-2.6.2-respond-1.1.0.min.js\"></script>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
+      out.write("        ");
+
+        String myname =  (String)session.getAttribute("username");        
+        if(myname == null){
+                response.sendRedirect("login.jsp");
+        }         
+        
+      out.write("\n");
       out.write("        <div class=\"navbar navbar-fixed-top\">\n");
       out.write("            <div class=\"navbar-inner\">\n");
       out.write("                <div class=\"container-fluid\">\n");
@@ -66,7 +74,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <ul class=\"nav pull-right\">\n");
       out.write("                            <li class=\"dropdown\">\n");
       out.write("                                <a href=\"#\" role=\"button\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"> <i class=\"icon-user\"></i> DR A <i class=\"caret\"></i>\n");
-      out.write("\n");
       out.write("                                </a>\n");
       out.write("                                <ul class=\"dropdown-menu\">\n");
       out.write("                                    <li>\n");
@@ -74,7 +81,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    </li>\n");
       out.write("                                    <li class=\"divider\"></li>\n");
       out.write("                                    <li>\n");
-      out.write("                                        <a tabindex=\"-1\" href=\"login.html\">Logout</a>\n");
+      out.write("                                        <a tabindex=\"-1\" href=\"LogoutServlet\">Logout</a>\n");
       out.write("                                    </li>\n");
       out.write("                                </ul>\n");
       out.write("                            </li>\n");
@@ -168,7 +175,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"span3\" id=\"sidebar\">\n");
       out.write("                    <ul class=\"nav nav-list bs-docs-sidenav nav-collapse collapse\">\n");
       out.write("                        <li class=\"active\">\n");
-      out.write("                            <a href=\"beranda.jsp\"><i class=\"icon-chevron-right\"></i>Beranda</a>\n");
+      out.write("                            <a href=\"index.jsp\"><i class=\"icon-chevron-right\"></i>Beranda</a>\n");
       out.write("                        </li>\n");
       out.write("                        <li>\n");
       out.write("                            <a href=\"pasien.jsp\"><i class=\"icon-chevron-right\"></i>Registrasi</a>\n");

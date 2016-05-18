@@ -3,18 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/Bean/Pasien.java</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/Bean/Umum.java</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/myServlet/UmumCRUD.java</file>
             <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/listPasien.jsp</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/DAO/UmumDao.java</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/DAO/FD.java</file>
+            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/myServlet/LoginServlet.java</file>
             <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/pasien.jsp</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/myServlet/PasienCRUD.java</file>
+            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/login.jsp</file>
             <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/listUmum.jsp</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/umum.jsp</file>
+            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/myServlet/LogoutServlet.java</file>
             <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/index.jsp</file>
-            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/src/java/DAO/PasienDao.java</file>
+            <file>file:/C:/Users/Farewell/Documents/NetBeansProjects/Progres_1/web/umum.jsp</file>
         </group>
     </open-files>
 </project-private>

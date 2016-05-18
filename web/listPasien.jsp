@@ -44,7 +44,7 @@
                                     </li>
                                     <li class="divider"></li>
                                     <li>
-                                        <a tabindex="-1" href="login.html">Logout</a>
+                                        <a tabindex="-1" href="LogoutServlet">Logout</a>
                                     </li>
                                 </ul>
                             </li>
