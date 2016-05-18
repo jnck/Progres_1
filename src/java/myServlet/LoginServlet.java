@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             } 
             else {
                 out.print("Incorrect login credentials");
-                response.sendRedirect("login.jsp");
+                request.getRequestDispatcher("login.jsp").include(request,response);
             }
         } 
         catch (ClassNotFoundException | SQLException e) {
